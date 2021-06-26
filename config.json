@@ -1,0 +1,14 @@
+{
+  "GREP_DIR": "C:\\Users\\Sanada\\Documents\\test",
+  "EXCLUDE_EXT": [
+    ".exe",
+    ".dll",
+    ".png",
+    ".gif",
+    ".jpeg",
+    ".jpg"
+  ],
+  "REPLACE_WORDS": {
+    "FROM": "TO"
+  }
+}

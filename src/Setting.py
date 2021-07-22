@@ -4,23 +4,22 @@ import sys
 
 
 class Setting:
-    setting_path = './config.json'
-
-    def __init__(self, logger):
+    
+    def __init__(self, logger, setting_path='./config.json'):
         # 設定ファイル存在チェック
-        if not os.path.isfile(self.setting_path):
-            logger.exception(self.setting_path + 'が存在しません')
-            # exit(1)
+        if not os.path.isfile(setting_path):
+            logger.exception(setting_path + 'が存在しません')
+            exit(1)
 
         try:
             # 設定ファイルオープン
-            with open(self.setting_path, encoding='utf-8') as f:
+            with open(setting_path, encoding='utf-8') as f:
                 self.jsn = json.load(f, strict=False)
         except:
             # エラーログの出力
             logger.exception('設定ファイルエラー')
             logger.exception(sys.exc_info())
-            # exit(1)
+            exit(1)
 
     def get_grep_dir(self):
         return self.jsn['GREP_DIR']

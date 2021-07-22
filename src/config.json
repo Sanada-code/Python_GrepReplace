@@ -1,0 +1,19 @@
+{
+  "GREP_DIR": "C:\\Users\\Sanada\\Documents\\test",
+  "EXCLUDE_EXT": [
+    ".exe",
+    ".dll",
+    ".png",
+    ".gif",
+    ".jpeg",
+    ".jpg"
+  ],
+  "REPLACE_WORDS": {
+    "FROM": "TO"
+  },
+
+  "Log_Settings": {
+    "Log_Export": true,
+    "Log_Level": 1
+  }
+}
